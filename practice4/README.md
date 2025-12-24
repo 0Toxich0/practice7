@@ -8,4 +8,4 @@
 медиазапросов
 
 ## Ссылка на проект
-[GitHub Pages](https://0toxich0.github.io/practice4/)
+[GitHub Pages](https://0toxich0.github.io/practice1-8/practice4/)
