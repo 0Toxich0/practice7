@@ -3,4 +3,4 @@
 Этот репозиторий является каркасом для будущего веб-приложения.
 ## Ссылки
 - [Публичная страница на GitHub](https://github.com/0Toxich0?tab=repositories)
-- [Сайт](https://0toxich0.github.io/practice1/)
+- [Сайт](https://0toxich0.github.io/practice1-8/practice1/index.html)
