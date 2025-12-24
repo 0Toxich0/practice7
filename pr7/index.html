@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Здоровое питание с доставкой | FreshFood</title>
+    <!-- Иконка сайта (favicon) -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Ctext%20y%3D%22.9em%22%20font-size%3D%2290%22%3E%F0%9F%A5%97%3C%2Ftext%3E%3C%2Fsvg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Ctext%20y%3D%22.9em%22%20font-size%3D%2290%22%3E%F0%9F%A5%97%3C%2Ftext%3E%3C%2Fsvg%3E">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- =====================
+         NAVIGATION
+         ===================== -->
+    <nav class="navbar is-fixed-top is-light" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <i class="fas fa-leaf fa-lg has-text-success"></i>
+                    <span class="ml-2 has-text-weight-bold">FreshFood</span>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#about">О нас</a>
+                    <a class="navbar-item" href="#advantages">Преимущества</a>
+                    <a class="navbar-item" href="#menu">Меню</a>
+                    <a class="navbar-item" href="#reviews">Отзывы</a>
+                    <a class="navbar-item" href="#order">
+                        <span class="button is-success is-rounded is-small">Заказать</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =====================
+         HERO SECTION
+         ===================== -->
+    <section class="hero is-success is-fullheight-with-navbar">
+        <div class="hero-body" style="background: linear-gradient(rgba(72, 199, 142, 0.486), rgba(72, 199, 142, 0.9)), 
+                url('https://xn----8sbnnbambfrmllc0aj3a1a.xn--p1ai/wp-content/uploads/2022/12/top-view-healthy-food-for-immunity-boosting-composition-1.jpg') 
+                center/cover no-repeat;">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-8 has-text-centered">
+                        <div class="mb-4">
+                            <i class="fas fa-leaf fa-3x has-text-white"></i>
+                        </div>
+                        
+                        <h1 class="title is-1 is-spaced has-text-white mb-4">
+                            Здоровое питание с доставкой
+                        </h1>
+                        
+                        <h2 class="subtitle is-4 has-text-white mb-5">
+                            Ежедневные рационы от шеф-повара. Без сахара, глютена и консервантов.
+                        </h2>
+                        
+                        <div class="buttons is-centered">
+                            <a href="#order" class="button is-light is-medium is-rounded">
+                                <span class="has-text-success">Заказать пробный день</span>
+                                <span class="icon"><i class="fas fa-arrow-right has-text-success"></i></span>
+                            </a>
+                            
+                            <a href="#menu" class="button is-outlined is-light is-medium is-rounded">
+                                <span class="has-text-white">Посмотреть меню</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================
+         ABOUT SECTION
+         ===================== -->
+    <section id="about" class="section py-6">
+        <div class="container">
+            <div class="section-header has-text-centered mb-6">
+                <h2 class="title is-2 has-text-white mt-3">Почему FreshFood?</h2>
+                <div class="divider is-centered"></div>
+            </div>
+            
+            <div class="columns is-vcentered">
+                <div class="column is-half">
+                    <p class="is-size-5 mb-4 has-text-white">
+                        Мы создаём рационы, которые не только полезны, но и невероятно вкусны. Наши блюда готовятся из свежих продуктов, доставляются прямо к вашей двери и помогают поддерживать энергию в течение всего дня.
+                    </p>
+                    <p class="is-size-5 has-text-white">
+                        Наша миссия — сделать здоровое питание доступным и удобным для каждого. Мы учитываем ваши предпочтения и цели: похудение, поддержание формы, набор мышечной массы или просто здоровая привычка.
+                    </p>
+                    
+                    <div class="mt-5">
+                        <div class="columns is-mobile">
+                            <div class="column">
+                                <div class="has-text-centered">
+                                    <span class="icon is-large has-text-white">
+                                        <i class="fas fa-heart fa-2x"></i>
+                                    </span>
+                                    <p class="has-text-white mt-2">Без ГМО</p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="has-text-centered">
+                                    <span class="icon is-large has-text-white">
+                                        <i class="fas fa-leaf fa-2x"></i>
+                                    </span>
+                                    <p class="has-text-white mt-2">Натурально</p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="has-text-centered">
+                                    <span class="icon is-large has-text-white">
+                                        <i class="fas fa-clock fa-2x"></i>
+                                    </span>
+                                    <p class="has-text-white mt-2">Свежее</p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="has-text-centered">
+                                    <span class="icon is-large has-text-white">
+                                        <i class="fas fa-truck fa-2x"></i>
+                                    </span>
+                                    <p class="has-text-white mt-2">Доставка</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="column is-half">
+                    <div class="card about-image-card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://images.apteka.ru/kak-sostavit-ratsion-dlya-zdorovogo-pitaniya-bez-zhstkikh-ogranicheniy_DetailPicture_-1922120651.webp" 
+                                    alt="Продукты на столе" 
+                                    class="about-img">
+                            </figure>
+                        </div>
+                        <div class="card-content has-background-light">
+                            <div class="content has-text-centered">
+                                <div class="is-flex is-align-items-center is-justify-content-center mb-3">
+                                    <i class="fas fa-check-circle has-text-success mr-3 is-size-5"></i>
+                                    <span class="has-text-dark has-text-weight-bold is-size-5">
+                                        100% натуральные ингредиенты
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================
+         ADVANTAGES SECTION
+         ===================== -->
+    <section id="advantages" class="section py-6 has-background-light">
+        <div class="container">
+            <div class="section-header has-text-centered mb-6">
+                <h2 class="title is-2 has-text-dark mt-3">Преимущества</h2>
+                <div class="divider is-centered"></div>
+            </div>
+            
+            <div class="columns is-multiline">
+                <!-- Advantage 1 -->
+                <div class="column is-4">
+                    <div class="box has-text-centered p-5 advantage-card">
+                        <div class="icon-wrapper mb-4">
+                            <i class="fas fa-seedling fa-3x has-text-success"></i>
+                        </div>
+                        <h3 class="title is-4 mb-3">Натуральные продукты</h3>
+                        <p>Только свежие овощи, фрукты, мясо и рыба от проверенных поставщиков.</p>
+                    </div>
+                </div>
+                
+                <!-- Advantage 2 -->
+                <div class="column is-4">
+                    <div class="box has-text-centered p-5 advantage-card">
+                        <div class="icon-wrapper mb-4">
+                            <i class="fas fa-clock fa-3x has-text-success"></i>
+                        </div>
+                        <h3 class="title is-4 mb-3">Экономия времени</h3>
+                        <p>Не нужно готовить и считать калории. Всё уже продумано за вас.</p>
+                    </div>
+                </div>
+                
+                <!-- Advantage 3 -->
+                <div class="column is-4">
+                    <div class="box has-text-centered p-5 advantage-card">
+                        <div class="icon-wrapper mb-4">
+                            <i class="fas fa-heartbeat fa-3x has-text-success"></i>
+                        </div>
+                        <h3 class="title is-4 mb-3">Здоровье и энергия</h3>
+                        <p>Сбалансированный рацион улучшает самочувствие и повышает продуктивность.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================
+         MENU SECTION
+         ===================== -->
+    <section id="menu" class="section py-6">
+        <div class="container">
+            <div class="section-header has-text-centered mb-6">
+                <h2 class="title is-2 has-text-white mt-3">Популярные рационы</h2>
+                <div class="divider is-centered"></div>
+            </div>
+            
+            <div class="columns is-multiline">
+                <!-- Menu Item 1 -->
+                <div class="column is-4">
+                    <div class="card menu-card">
+                        <div class="card-image">
+                            <img src="https://optim.tildacdn.com/stor6632-3138-4534-b765-326636336138/-/format/webp/11023158.jpg" 
+                                 alt="Рацион 1500кк">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4 mb-3 has-text-white">Лёгкий</h3>
+                            <p class="mb-4 has-text-white">1500 ккал в день. Идеально для похудения и детокса.</p>
+                            <p class="has-text-weight-bold is-size-4 mb-4 has-text-success">1200 ₽/день</p>
+                            <button class="button is-success is-fullwidth">Выбрать</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Menu Item 2 -->
+                <div class="column is-4">
+                    <div class="card menu-card">
+                        <div class="card-image">
+                            <img src="https://static.tildacdn.com/stor3861-6230-4333-b434-363137393833/53858849.jpg" 
+                                 alt="Рацион 2000кк">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4 mb-3 has-text-white">Стандартный</h3>
+                            <p class="mb-4 has-text-white">2000 ккал в день. Сбалансированное питание для поддержания формы.</p>
+                            <p class="has-text-weight-bold is-size-4 mb-4 has-text-success">1500 ₽/день</p>
+                            <button class="button is-success is-fullwidth">Выбрать</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Menu Item 3 -->
+                <div class="column is-4">
+                    <div class="card menu-card">
+                        <div class="card-image">
+                            <img src="https://optim.tildacdn.com/stor3833-3932-4365-a135-336237373362/-/format/webp/82643418.jpg" 
+                                 alt="Рацион 2500кк">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4 mb-3 has-text-white">Силовой</h3>
+                            <p class="mb-4 has-text-white">2500 ккал в день. Для спортсменов и активного образа жизни.</p>
+                            <p class="has-text-weight-bold is-size-4 mb-4 has-text-success">1800 ₽/день</p>
+                            <button class="button is-success is-fullwidth">Выбрать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================
+         REVIEWS SECTION
+         ===================== -->
+    <section id="reviews" class="section py-6">
+        <div class="container">
+            <div class="section-header has-text-centered mb-6">
+                <h2 class="title is-2 has-text-white mt-3">Отзывы наших клиентов</h2>
+                <div class="divider is-centered"></div>
+            </div>
+            
+            <div class="columns is-multiline">
+                <!-- Review 1 -->
+                <div class="column is-6">
+                    <div class="box p-5 review-card">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img class="is-rounded" src="assets/avatar/1.avif" 
+                                         alt="Фото Марии, клиентки FreshFood">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-5 has-text-white">Мария</p>
+                                <p class="subtitle is-6 has-text-white">@maria_health</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 has-text-white">"За месяц на FreshFood сбросила 4 кг без стресса! Очень вкусно и удобно."</p>
+                    </div>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="column is-6">
+                    <div class="box p-5 review-card">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img class="is-rounded" src="assets/avatar/2.avif"
+                                         alt="Фото Алексея, клиента FreshFood">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-5 has-text-white">Алексей</p>
+                                <p class="subtitle is-6 has-text-white">@alex_fit</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 has-text-white">"Пользуюсь 3 месяца. Энергии стало больше, пропала тяжесть после еды."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================
+         ORDER SECTION
+         ===================== -->
+    <section id="order" class="section py-6 has-background-success">
+        <div class="container has-text-centered">
+            <h2 class="title is-2 has-text-white mb-4">Готовы начать?</h2>
+            <p class="subtitle is-5 has-text-white mb-6">
+                Закажите пробный день прямо сейчас и получите скидку 20% на первую неделю!
+            </p>
+            
+            <form class="box is-inline-block p-5" style="max-width: 500px;">
+                <div class="field">
+                    <div class="control has-icons-left">
+                        <input class="input is-medium" type="text" placeholder="Ваше имя" required>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <div class="control has-icons-left">
+                        <input class="input is-medium" type="email" placeholder="Ваш email" required>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <div class="control has-icons-left">
+                        <input class="input is-medium" type="tel" placeholder="Ваш телефон" required>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-phone"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                <button class="button is-success is-medium is-fullwidth mt-4">
+                    <strong>Заказать пробный день</strong>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- =====================
+         FOOTER
+         ===================== -->
+    <footer class="footer has-background-dark has-text-white">
+        <div class="container">
+            <div class="columns">
+                <!-- Contact Info -->
+                <div class="column">
+                    <h3 class="title is-4 has-text-white mb-4">FreshFood</h3>
+                    <p class="mb-3 has-text-light">Здоровое питание с доставкой по Москве и области.</p>
+                    <p class="mb-2 has-text-light">
+                        <i class="fas fa-phone mr-2"></i> +7 (999) 123-45-67
+                    </p>
+                    <p class="has-text-light">
+                        <i class="fas fa-envelope mr-2"></i> hello@freshfood.ru
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="column">
+                    <h4 class="title is-5 has-text-white mb-4">Быстрые ссылки</h4>
+                    <p><a href="#about" class="has-text-light">О нас</a></p>
+                    <p><a href="#advantages" class="has-text-light">Преимущества</a></p>
+                    <p><a href="#menu" class="has-text-light">Меню</a></p>
+                    <p><a href="#order" class="has-text-light">Заказать</a></p>
+                </div>
+                
+                <!-- Social Media -->
+                <div class="column">
+                    <h4 class="title is-5 has-text-white mb-4">Мы в соцсетях</h4>
+                    <div class="social-icons mb-4">
+                        <a class="has-text-light mr-3" href="#" aria-label="ВКонтакте">
+                            <i class="fab fa-vk fa-2x"></i>
+                        </a>
+                        <a class="has-text-light mr-3" href="#" aria-label="Telegram">
+                            <i class="fab fa-telegram fa-2x"></i>
+                        </a>
+                        <a class="has-text-light mr-3" href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a class="has-text-light" href="#" aria-label="YouTube">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                    </div>
+                    <p class="is-size-7 has-text-light">© 2025 FreshFood. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =====================
+         JAVASCRIPT
+         ===================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            
+            if (navbarBurgers.length > 0) {
+                navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const targetElement = document.getElementById(target);
+                        
+                        el.classList.toggle('is-active');
+                        targetElement.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,502 @@
+/* =====================
+   CUSTOM STYLES FOR FRESHFOOD LANDING
+   ===================== */
+
+/* =====================
+   GLOBAL STYLES
+   ===================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section {
+    padding: 3rem 1.5rem;
+}
+
+.hero.is-fullheight-with-navbar {
+    min-height: calc(100vh - 3.25rem);
+}
+
+/* =====================
+   SECTION HEADERS
+   ===================== */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.section-tag {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    background-color: #48c78e;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.title.is-2 {
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.divider {
+    height: 3px;
+    width: 60px;
+    background: #48c78e;
+    margin: 1.25rem auto;
+    border-radius: 3px;
+}
+
+/* =====================
+   HERO SECTION
+   ===================== */
+
+.hero {
+    background-color: #a8d8b9;
+}
+
+/* =====================
+   ABOUT SECTION
+   ===================== */
+
+#about {
+    background: linear-gradient(90deg, rgba(72, 199, 142, 0.9) 0%, rgba(72, 199, 142, 0.7) 100%),
+                url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center right;
+    color: white;
+}
+
+.about-image-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-image-card .card-image {
+    height: auto;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+}
+
+.about-image-card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-image-card .card-content {
+    background: white;
+    padding: 1.5rem;
+    border-top: 3px solid #48c78e;
+}
+
+.about-image-card .card-content .content p:first-child {
+    color: #222222;
+    font-weight: 600;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-image-card .card-content .content p:last-child {
+    color: #444444;
+    font-size: 0.95rem;
+}
+
+/* =====================
+   ADVANTAGES SECTION
+   ===================== */
+
+.has-background-light {
+    background-color: #f8f9fa;
+}
+
+.advantage-card {
+    height: 100%;
+    border-top: 4px solid #48c78e;
+    background: white;
+    padding: 1.75rem 1.5rem;
+}
+
+.advantage-card .title {
+    color: #222222;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.icon-wrapper {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/* =====================
+   MENU SECTION
+   ===================== */
+
+#menu {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+}
+
+.menu-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.menu-card .card-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.menu-card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-card .card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+.menu-card .title {
+    color: white;
+    font-size: 1.25rem;
+}
+
+.menu-card .has-text-success {
+    color: #48c78e;
+    font-size: 1.5rem;
+}
+
+/* =====================
+   REVIEWS SECTION
+   ===================== */
+
+#reviews {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+}
+
+.review-card {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.75rem;
+}
+
+/* =====================
+   ORDER SECTION
+   ===================== */
+
+.has-background-success {
+    background-color: #48c78e;
+}
+
+form.box {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+
+.footer {
+    background-color: #333333;
+    padding: 2.5rem 1.5rem;
+}
+
+/* =====================
+   RESPONSIVE ADJUSTMENTS
+   ===================== */
+
+/* Планшеты (до 1023px) */
+@media (max-width: 1023px) {
+    .section {
+        padding: 2rem 1rem;
+    }
+    
+    .hero .title.is-1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero .subtitle.is-4 {
+        font-size: 1.3rem;
+    }
+    
+    .menu-card .card-image {
+        height: 180px;
+    }
+    
+    .about-image-card {
+        margin-top: 2rem;
+    }
+    
+    .advantage-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Телефоны (до 768px) */
+@media (max-width: 768px) {
+    .section {
+        padding: 1.5rem 0.75rem;
+    }
+    
+    .section-header {
+        margin-bottom: 1.5rem;
+    }
+    
+    .title.is-2 {
+        font-size: 1.75rem;
+    }
+    
+    .subtitle.is-5 {
+        font-size: 1.1rem;
+    }
+    
+    .columns.is-vcentered {
+        flex-direction: column;
+    }
+    
+    .column.is-half {
+        width: 100%;
+    }
+    
+    .menu-card .card-image {
+        height: 160px;
+    }
+    
+    .hero .title.is-1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .hero .subtitle.is-4 {
+        font-size: 1.1rem;
+    }
+    
+    .hero .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero .buttons .button {
+        margin-bottom: 0.75rem;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .footer .columns {
+        flex-direction: column;
+    }
+    
+    .footer .column {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    .navbar-menu {
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+    
+    .navbar-item {
+        padding: 0.75rem 1rem;
+    }
+    
+    .help-box {
+        padding: 1.5rem;
+    }
+    
+    .contact-info-box {
+        padding: 1.25rem;
+    }
+    
+    .form-box {
+        padding: 1.25rem;
+    }
+    
+    .accordion-header {
+        padding: 15px;
+        font-size: 1rem;
+    }
+    
+    .accordion-content p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Маленькие телефоны (до 480px) */
+@media (max-width: 480px) {
+    .section {
+        padding: 1rem 0.5rem;
+    }
+    
+    .hero .title.is-1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero .subtitle.is-4 {
+        font-size: 1rem;
+    }
+    
+    .menu-card .card-image {
+        height: 140px;
+    }
+    
+    .about-image-card .card-content .content p:first-child {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .title.is-4 {
+        font-size: 1.25rem;
+    }
+    
+    .button.is-medium {
+        font-size: 1rem;
+        padding: 0.75rem 1.25rem;
+    }
+    
+    .social-icons a {
+        margin-right: 0.5rem;
+    }
+    
+    .social-icons i.fa-2x {
+        font-size: 1.5rem;
+    }
+    
+    .contact-detail .columns {
+        flex-direction: column;
+    }
+    
+    .contact-detail .column {
+        width: 100%;
+        margin-bottom: 0.75rem;
+    }
+    
+    .compact-contacts .columns {
+        flex-direction: column;
+    }
+    
+    .compact-contacts .column {
+        width: 100%;
+        margin-bottom: 0.75rem;
+    }
+    
+    .buttons.are-small .button {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .error-code {
+        font-size: 5rem;
+    }
+    
+    .error-title {
+        font-size: 1.25rem;
+    }
+}
+
+/* Очень маленькие телефоны (до 360px) */
+@media (max-width: 360px) {
+    .hero .title.is-1 {
+        font-size: 1.6rem;
+    }
+    
+    .title.is-2 {
+        font-size: 1.5rem;
+    }
+    
+    .button {
+        font-size: 0.9rem;
+    }
+    
+    .navbar-item {
+        font-size: 0.9rem;
+    }
+    
+    .menu-card .card-content {
+        padding: 1rem;
+    }
+    
+    .review-card {
+        padding: 1.25rem;
+    }
+}
+
+/* Портретная ориентация */
+@media (max-height: 600px) and (orientation: portrait) {
+    .hero.is-fullheight-with-navbar {
+        min-height: 100vh;
+    }
+    
+    .hero-body {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+/* Ландшафтная ориентация */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero.is-fullheight-with-navbar {
+        min-height: auto;
+        height: auto;
+    }
+    
+    .hero-body {
+        padding: 3rem 0;
+    }
+}
+
+/* Высокопиксельные экраны */
+@media (min-resolution: 192dpi) {
+    .about-image-card,
+    .menu-card,
+    .review-card,
+    .form-box,
+    .contact-info-box {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+}
+
+/* Темная тема */
+@media (prefers-color-scheme: dark) {
+    .has-background-light {
+        background-color: #2a2a2a;
+    }
+    
+    .advantage-card,
+    .form-box {
+        background-color: #333;
+        color: #fff;
+    }
+    
+    .advantage-card .title,
+    .form-label,
+    .checkbox-label {
+        color: #fff;
+    }
+}

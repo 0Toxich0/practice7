@@ -1,0 +1,303 @@
+/* =====================
+   CUSTOM STYLES FOR FRESHFOOD LANDING
+   ===================== */
+
+/* =====================
+   GLOBAL STYLES
+   ===================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section {
+    padding: 3rem 1.5rem;
+}
+
+.hero.is-fullheight-with-navbar {
+    min-height: calc(100vh - 3.25rem);
+}
+
+/* =====================
+   SECTION HEADERS
+   ===================== */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.section-tag {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    background-color: #48c78e;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.title.is-2 {
+    color: #333333 !important;
+    font-weight: 700 !important;
+    margin-bottom: 0.75rem !important;
+}
+
+.divider {
+    height: 3px;
+    width: 60px;
+    background: #48c78e;
+    margin: 1.25rem auto;
+    border-radius: 3px;
+}
+
+/* =====================
+   HERO SECTION
+   ===================== */
+
+.hero {
+    background-color: #a8d8b9 !important;
+}
+
+/* =====================
+   ABOUT SECTION
+   ===================== */
+
+#about {
+    background: linear-gradient(90deg, rgba(72, 199, 142, 0.9) 0%, rgba(72, 199, 142, 0.7) 100%),
+                url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center right;
+    color: white;
+}
+
+.about-image-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-image-card .card-image {
+    height: auto;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+}
+
+.about-image-card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-image-card .card-content {
+    background: white;
+    padding: 1.5rem;
+    border-top: 3px solid #48c78e;
+}
+
+.about-image-card .card-content .content p:first-child {
+    color: #222222;
+    font-weight: 600;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-image-card .card-content .content p:last-child {
+    color: #444444;
+    font-size: 0.95rem;
+}
+
+/* =====================
+   ADVANTAGES SECTION
+   ===================== */
+
+.has-background-light {
+    background-color: #f8f9fa !important;
+}
+
+.advantage-card {
+    height: 100%;
+    border-top: 4px solid #48c78e;
+    background: white;
+    padding: 1.75rem 1.5rem;
+}
+
+.advantage-card .title {
+    color: #222222 !important;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.icon-wrapper {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/* =====================
+   MENU SECTION
+   ===================== */
+
+#menu {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+}
+
+.menu-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.menu-card .card-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.menu-card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-card .card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+.menu-card .title {
+    color: white !important;
+    font-size: 1.25rem;
+}
+
+.menu-card .has-text-success {
+    color: #48c78e !important;
+    font-size: 1.5rem;
+}
+
+/* =====================
+   REVIEWS SECTION
+   ===================== */
+
+#reviews {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+}
+
+.review-card {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.75rem;
+}
+
+/* =====================
+   ORDER SECTION
+   ===================== */
+
+.has-background-success {
+    background-color: #48c78e !important;
+}
+
+form.box {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+
+.footer {
+    background-color: #333333 !important;
+    padding: 2.5rem 1.5rem;
+}
+
+/* =====================
+   RESPONSIVE ADJUSTMENTS
+   ===================== */
+
+/* Планшеты (до 1023px) */
+@media (max-width: 1023px) {
+    .section {
+        padding: 2rem 1rem;
+    }
+    
+    .hero .title.is-1 {
+        font-size: 2.5rem !important;
+    }
+    
+    .menu-card .card-image {
+        height: 180px;
+    }
+}
+
+/* Телефоны (до 768px) */
+@media (max-width: 768px) {
+    .section {
+        padding: 1.5rem 0.75rem;
+    }
+    
+    .columns.is-vcentered {
+        flex-direction: column;
+    }
+    
+    .column.is-half {
+        width: 100%;
+    }
+    
+    .menu-card .card-image {
+        height: 160px;
+    }
+    
+    .hero .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero .buttons .button {
+        margin-bottom: 0.75rem;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .footer .columns {
+        flex-direction: column;
+    }
+    
+    .footer .column {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+}
+
+/* Маленькие телефоны (до 480px) */
+@media (max-width: 480px) {
+    .hero .title.is-1 {
+        font-size: 2rem !important;
+    }
+    
+    .menu-card .card-image {
+        height: 140px;
+    }
+    
+    .about-image-card .card-content .content p:first-child {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+}

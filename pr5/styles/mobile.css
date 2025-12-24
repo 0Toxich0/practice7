@@ -1,0 +1,341 @@
+:root {
+    --primary-color: #415167;
+    --accent-color: #C7A87A;
+    --dark-gray: #151D28;
+    --light-gray: #EDF0F5;
+    --background: #F9F5E8;
+    --white: #FFFFFF;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease;
+}
+
+/* ========= ИСПРАВЛЕНИЕ ДЛЯ 769px-992px ========= */
+
+/* На планшетах 769px-992px скрываем гамбургер-меню */
+@media (max-width: 992px) and (min-width: 769px) {
+    .menu-toggle,
+    .mobile-nav,
+    .nav-overlay,
+    .scroll-top {
+        display: none !important;
+    }
+}
+
+/* Планшеты и мобильные (768px и меньше) */
+@media (max-width: 768px) {
+    /* Показываем гамбургер-кнопку */
+    .menu-toggle {
+        display: flex !important;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+        background: var(--primary-color);
+        border: none;
+        border-radius: 6px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    
+    .menu-toggle__line {
+        width: 24px;
+        height: 3px;
+        background: white;
+        border-radius: 2px;
+        transition: var(--transition);
+    }
+    
+    /* Анимация гамбургера */
+    .menu-toggle.active .menu-toggle__line:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    
+    .menu-toggle.active .menu-toggle__line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.active .menu-toggle__line:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+    
+    /* Скрываем сайдбар на мобильных */
+    .side-bar {
+        display: none !important;
+    }
+    
+    /* Мобильное меню */
+    .mobile-nav {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: var(--primary-color);
+        padding: 80px 30px 30px;
+        transition: right 0.4s ease;
+        z-index: 1000;
+        overflow-y: auto;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+    }
+    
+    .mobile-nav.active {
+        right: 0;
+    }
+    
+    .mobile-nav__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .mobile-nav__item {
+        width: 100%;
+    }
+    
+    .mobile-nav__link {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        transition: var(--transition);
+        font-weight: 500;
+    }
+    
+    .mobile-nav__link:hover,
+    .mobile-nav__link.active {
+        color: var(--accent-color);
+        padding-left: 10px;
+    }
+    
+    /* Оверлей для меню */
+    .nav-overlay {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition);
+    }
+    
+    .nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    /* Основной контент */
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+        padding: 1rem;
+    }
+    
+    /* Фиксация заголовка при скролле */
+    .top-header {
+        position: sticky;
+        top: 0;
+        background: var(--background);
+        z-index: 100;
+        padding: 10px 0;
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    /* Адаптация контента */
+    .giftset__content {
+        flex-direction: column;
+    }
+    
+    .giftset__image {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+    
+    .giftset__specs {
+        grid-template-columns: 1fr;
+    }
+    
+    .combo__cards,
+    .taste__cards,
+    .features__grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .masonry-container {
+        column-count: 1;
+    }
+    
+    /* Увеличение touch-зон */
+    .button {
+        min-width: 120px;
+        min-height: 44px;
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+    
+    .giftset__actions,
+    .card__actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    /* Корректировка текста для мобильных */
+    body {
+        font-size: 17px; /* iOS рекомендация */
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    .giftset__price,
+    .card__price-current,
+    .taste-card__price {
+        font-size: 1.8rem;
+    }
+}
+
+/* Мобильные (480px и меньше) */
+@media (max-width: 480px) {
+    .mobile-nav {
+        width: 100%;
+    }
+    
+    .banner {
+        margin-bottom: 1.5rem;
+    }
+    
+    .banner__image {
+        max-height: 200px;
+        object-fit: cover;
+    }
+    
+    .button {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .footer__nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    
+    .footer__info {
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
+    }
+    
+    /* Увеличение шрифта для лучшей читаемости */
+    .mobile-nav__link {
+        font-size: 20px;
+        padding: 18px 0;
+    }
+    
+    .card,
+    .taste-card,
+    .feature,
+    .masonry-item {
+        padding: 1.5rem;
+    }
+}
+
+/* ========= КНОПКА "НАВЕРХ" ========= */
+
+.scroll-top {
+    display: block !important;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 56px;
+    height: 56px;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top:hover {
+    background: #b5986a;
+    transform: scale(1.1);
+}
+
+.scroll-top:active {
+    transform: scale(0.95);
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .scroll-top {
+        width: 52px;
+        height: 52px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 22px;
+    }
+}
+
+/* Отключение горизонтального скролла */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* Убедимся, что на десктопе кнопка "Наверх" скрыта */
+@media (min-width: 993px) {
+    .scroll-top {
+        display: block !important;
+    }
+}
